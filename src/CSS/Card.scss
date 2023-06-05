@@ -1,46 +1,109 @@
-.Card {
-  cursor: pointer;
-  width: 600px;
-  height: 200px;
-  border-radius: 15px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  padding: 3%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 10%;
-  .Card-img {
-    width: 220px;
-    height: 220px;
-    border-radius: 15px;
-  }
+body {
+  background-color: #f4f5f5;
+}
 
-  .Card-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    gap: 2vw;
-    h1 {
-      font-size: 40px;
-    }
-    h3 {
-      font-size: 30px;
-      font-weight: 500;
-    }
-    .Card-button {
-      width: 50px;
-      height: 50px;
-      border-radius: 10px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #f0d904;
-      padding: 2%;
-      img {
-        width: 70%;
-      }
-    }
+.card {
+  margin: 40px 12px;
+  width: 400px;
+  height: 300px;
+  background-color: #ffffff;
+  border-bottom: 4px solid #ffbd00;
+  border-radius: 3px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.11);
+  overflow: hidden;
+  float: left;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.card:hover {
+  transform: scale(1.1);
+  transition: 0.125s ease-in-out;
+}
+img {
+  width: 400px;
+  height: 237px;
+}
+.content {
+  margin-top: -50px;
+}
+.date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 60px;
+  border-right: 1px dashed #c6cacd;
+  float: left;
+  height: 102px;
+  text-align: center;
+  color: #000;
+  font-weight: 600;
+  padding: 9px 0;
+}
+.numeric {
+  font-size: 25px;
+}
+.month {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 500;
+  letter-spacing: 0.9px;
+  line-height: 12px;
+  font-weight: 900;
+}
+.info {
+  float: left;
+  padding: 9px 18px;
+}
+.trip-name {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  word-wrap: break-word;
+  color: #000;
+}
+.trip-address {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #000;
+}
+.trip-contains {
+  display: block;
+  font-size: 16px;
+  padding: 6px 0;
+}
+
+.clip-polygon {
+  -webkit-clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 167px,
+    53px 167px,
+    60px 80%,
+    67px 167px,
+    0% 167px
+  );
+}
+
+@media screen and (max-width: 450px) {
+  .card {
+    margin: 40px 12px;
+    width: 90vw;
+    height: 300px;
+    background-color: #ffffff;
+    border-bottom: 4px solid #ffbd00;
+    border-radius: 3px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.11);
+    overflow: hidden;
+    float: left;
+    transition: 0.25s;
+    cursor: pointer;
   }
 }

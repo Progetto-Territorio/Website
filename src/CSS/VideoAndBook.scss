@@ -1,0 +1,39 @@
+.VideoAndBook-container {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5rem;
+  .video-wrapper {
+    width: 80%;
+    height: 80%;
+    min-height: 225px;
+  }
+  .visualizePdf-Btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #221d23;
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+  }
+}
+@media screen and (max-width: 600px) {
+  .VideoAndBook-container {
+    margin-top: 20%;
+    margin-bottom: 20%;
+    .video-wrapper {
+      width: 100%;
+      height: 80%;
+      min-height: 225px;
+    }
+  }
+}
