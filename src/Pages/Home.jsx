@@ -39,6 +39,8 @@ export default function Home() {
             <img src={"../src/assets/photos/Gruppo_soccorso/bg.jpg"} />
           </SwiperSlide>
         </Swiper>
+
+        <p>Frase</p>
       </div>
     </>
   );

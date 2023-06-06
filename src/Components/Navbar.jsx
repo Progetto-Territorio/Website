@@ -59,10 +59,10 @@ export default function Navbar() {
                 </Link>
 
                 <Link
-                  to="/monumenti"
+                  to="/appendice"
                   onClick={() => setMobileOpen(!mobileOpen)}
                 >
-                  <li>Monumenti</li>
+                  <li>Appendice</li>
                 </Link>
 
                 <Link
@@ -104,7 +104,7 @@ export default function Navbar() {
                           <Link to="/monumenti_prato">Monumenti Prato</Link>
                         </li>
                         <li className="drop-item">
-                          <Link to="/monumenti">Monumenti</Link>
+                          <Link to="/appendice">Appendice</Link>
                         </li>
                         <li className="drop-item">
                           {" "}
